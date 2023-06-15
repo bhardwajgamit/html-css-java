@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!----link css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!---reg page---->
+    <div class="reg_page">
+        <h1>reg page</h1>
+        <!---firstname-->
+        <div class=" row">
+            <div class="col">firstname</div>
+            <div class="col">
+                <input type="text" name="firstname" id="fname" placeholder="enter your first name">
+            </div>
+
+          </div>
+         <div class="col">
+            <span id="msg"></span>
+         </div>
+        <!-----last name-->
+
+ 
+         <div class="row">
+            <div class="col">last name</div>
+            <input type="text" name="lastname" id="lname" placeholder="enter you last name">
+            <div class="col">
+                <span id="msg1"></span>
+            </div>
+
+
+         </div>
+
+
+           <!-----radio for gender-->
+           <div class="row">
+            <div class="col">gender</div>
+            <input type="radio" name="gen" id="male">
+            <label for="">male</label>
+            <input type="radio" name="gen" id="female">
+            <label for="">female</label>
+            <div class="col">
+                <span id="msg2"></span>
+            </div>
+
+           </div>
+
+           <!------date of birth------->
+           <div class="row">
+            <div class="col">date of birth</div>
+            <input type="date" id="dob">
+            <div class="col">
+                <span id="msg3"></span>
+            </div>
+            </div>
+              <!-- city -->
+        <div class="row">
+            <div class="col">city</div>
+            <div class="col">
+                <select name="" id="city" >
+                    <option value="-1">---select---</option>
+                    <option value="">dolvan</option>
+                    <option value="">vayra</option>
+                </select>
+            </div>
+            <div class="col">
+                <span id="msg4"></span>
+            </div>
+        </div>
+            <!-----addresh------->
+            <div class="row">
+                <div class="col">addresh</div>
+                <textarea  name="addresh"  id="adr" cols="40" rows="20" ></textarea>
+            </div>
+            <div class="col">
+                <span id="msg5"></span>
+            </div>
+            <!-----mobile no------>
+            <div class="row">
+                <div class="col">mobile no</div>
+                <input type="text" name=" " id="mobile_no">
+                <div class="col">
+                    <span id="msg6"></span>
+                </div>
+            </div>
+            <!-----email----->
+            <div class="row">
+                <div class="col">email</div>
+                <input type="text" name="" id="email_add">
+            </div>
+              <!-- password -->
+        <div class="row pass_row1">
+            <div class="col">Password</div>
+            <div class="col">
+                <input type="password" name="" id="pass"  maxlength="12">
+            </div>
+            <div class="col icon1">
+                <span class="fa-solid fa-eye" ></span>
+            </div>
+            <div class="col">
+                <span id="msg7"></span>
+            </div>
+        </div>
+        <!-- confirm password -->
+        <div class="row pass_row2">
+            <div class="col">Confirm password</div>
+            <div class="col">
+                <input type="password" name="" id="cpass" >
+            </div>
+            <div class="col icon2">
+                <span class="fa-solid fa-eye" ></span>
+            </div>
+            <div class="col">
+                <span id="msg8"></span>
+            </div>
+        </div>
+         <!-- button -->
+         <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <button type="submit" onclick="return  blank_val_check()" >Submit</button>
+            </div>
+        </div>
+
+        <!-- note for password -->
+        <p>
+            <b>Note :</b>
+            a password between 8 to 12 characters which contain at least one lowercase letter, one uppercase letter, one numeric
+            digit, and one special character
+        </p>
+
+
+
+        
+     </div>
+ 
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
