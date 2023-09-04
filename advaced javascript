@@ -1,0 +1,82 @@
+
+1   What is JavaScript Output method?
+  — JavaScript can "display" data in different ways: Writing into an HTML element, using innerHTML . Writing into the HTML output using document.write() . Writing into an alert box, using window.alert() . Writing into the browser console, using console.log() .
+
+2 How to used JavaScript Output method?
+—-Writing into an HTML element, using innerHTML .
+Writing into the HTML output using document.write() .
+Writing into an alert box, using window.alert() .
+Writing into the browser console, using console.log() .
+
+
+3 How to used JavaScript Events to do all examples?
+—-Onload: When your page loads, it performs accordingly.
+Onclick: When a user clicks on a button or inputs it occurs.
+<button onclick="myFunction()">Click Me</button>
+<script>
+function myFunction() {
+  alert("You clicked the button!");
+}
+</script>
+Onchange: When a user on change on the button.
+<input type="text" id="fname" onchange="myFunction()">
+<script>
+function myFunction() {
+  var x = document.getElementById("fname").value;
+  alert("The value of the input field is: " + x);
+}
+</script>
+Onkeyup: Certain scenarios when a user keeps click on up key form field.
+<input type="text" id="fname" onkeyup="myFunction()">
+<script>
+function myFunction() {
+  var x = document.getElementById("fname").value;
+  alert("The value of the input field is: " + x);
+}
+</script>
+Onblur: If a particular form field leaves within it.
+
+4Calculate subtotal price of quantity in JavaScript? 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Subtotal Price Calculator</title>
+</head>
+<body>
+  <h1>Subtotal Price Calculator</h1>
+  <form>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" min="1">
+    <br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" min="0.01" step="0.01">
+    <br>
+    <input type="button" value="Calculate" onclick="calculateSubtotal()">
+  </form>
+  <p>Subtotal: <span id="subtotal"></span></p>
+  <script>
+    function calculateSubtotal() {
+      // Get the quantity of the item
+      var quantity = document.getElementById("quantity").value;
+      // Get the price of the item
+      var price = document.getElementById("price").value;
+      // Calculate the subtotal price
+      var subtotal = quantity * price;
+      // Display the subtotal price
+      document.getElementById("subtotal").innerHTML = subtotal;
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>
+
